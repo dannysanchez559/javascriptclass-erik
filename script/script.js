@@ -18,7 +18,7 @@ while (Number.isNaN(firstNumber)) {
     
 }
 
-// repeat logif for the second number.
+// repeat logic for the second number.
 
 let secondNumber = prompt("enter the second number");
 secondNumber = parseInt(secondNumber);
