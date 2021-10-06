@@ -6,12 +6,15 @@
 
 // input value (prompt box accepts as a string regardless)
 let firstNumber = prompt("enter the first number");
+console.log(firstNumber, typeof firstNumber);
 
 // attempt to check if string can be converted to number
 firstNumber = parseInt(firstNumber);
+console.log(firstNumber, typeof firstNumber);
 
 // if not, prompt user again to input a valid number
 // while first number is not a valid number
+
 while (Number.isNaN(firstNumber)) {
     // keep prompting user to enter a valid first number.
     firstNumber = prompt("please enter a valid firstNumber.");
