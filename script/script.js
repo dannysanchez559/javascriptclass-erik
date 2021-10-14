@@ -2,7 +2,13 @@
 // Alert the user whether the given number is even or odd
 // Call your function
 
-function isEvenOrOdd(num) {
+const isEvenOrOdd = (num) => {
+    // check if user clicked cancel button
+    if(num === null) return alert("Please enter a valid number.");
+
+    // convert to number
+    num = Number(num);
+    
     if (num % 2 === 1) {
         alert(`${num} is odd!`);
     } else if(num % 2 === 0) {
